@@ -1,0 +1,39 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    margin: 0;
+	margin-bottom: 60px;
+}
+
+.site-header{
+	background-color: #a9e598;
+}
+
+.logo__subtitle {
+    margin-bottom: 0;
+}
+
+.site-nav{
+	background-color: #eee;
+    padding:10px 0;
+}
+
+.site-content{
+	padding: 10px 0;
+}
+
+.site-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #a9e598
+}
+
+.table tr td {
+	border: 1px solid black;
+	padding: 5px;
+}
