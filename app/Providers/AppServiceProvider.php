@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Services\Notes\Repositories\EloquentNoteRepository;
 use App\Services\Notes\Repositories\NoteRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Pagination\Paginator;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Paginator::useBootstrapFive();
     }
 }
