@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index ()
     {
-        $notes = Note::simplePaginate(5);
+        $notes = Note::query()->Paginate(5);
 
         return view('home', [
             'notes' => $notes

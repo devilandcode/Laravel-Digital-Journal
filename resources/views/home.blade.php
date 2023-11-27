@@ -25,7 +25,7 @@
         </tbody>
     </table>
     <div class="container my-3">
-        {{ $notes->links() }}
+        {{ $notes->links()}}
     </div>
 
 
