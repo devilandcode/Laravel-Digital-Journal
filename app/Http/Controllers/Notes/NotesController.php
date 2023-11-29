@@ -18,8 +18,6 @@ class NotesController extends Controller
     {
         $note = $this->notesService->findBySlug($slug);
 
-        return view('posts.index', [
-            'note' => $note
-        ]);
+        return view('posts.index', compact('note'));
     }
 }

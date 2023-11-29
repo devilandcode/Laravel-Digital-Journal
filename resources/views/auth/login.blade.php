@@ -7,7 +7,6 @@
 @section('title', 'Log in')
 
 @section('content')
-
 <div class="container" >
     <div class="row justify-content-center">
         <h1 style="text-align: center;">Sign In</h1>

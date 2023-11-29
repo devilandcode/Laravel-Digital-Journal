@@ -31,7 +31,7 @@
         <a class="btn btn-primary btn-lg" href="/post/create" role="button">Add Note</a>
     </div>
 </div>
-<main>
+<main class="main">
     @yield('content')
 </main>
 

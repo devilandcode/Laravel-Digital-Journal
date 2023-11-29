@@ -1,23 +1,28 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light my-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">DJ</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Top</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Log in</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <x-nav>
+        <x-nav.bar>
+            <x-nav.item>
+                <x-nav.link  href="/" active>
+                    {{ __('Home') }}
+                </x-nav.link>
+            </x-nav.item>
+            <x-nav.item>
+                <x-nav.link>
+                    {{ __('Top') }}
+                </x-nav.link>
+            </x-nav.item>
+            <x-nav.item>
+                <x-nav.link>
+                    {{ __('Interesting') }}
+                </x-nav.link>
+            </x-nav.item>
+        </x-nav.bar>
+        <x-nav.bar>
+            <x-nav.item>
+                <x-nav.link href="/login">
+                    {{ __('Login') }}
+                </x-nav.link>
+            </x-nav.item>
+        </x-nav.bar>
+    </x-nav>
 </header>
