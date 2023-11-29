@@ -19,16 +19,17 @@
         </x-nav.bar>
         <x-nav.bar>
             <x-nav.item>
-                <x-nav.link href="/login">
-                    {{ __('Login') }}
-                </x-nav.link>
+                <x-nav.linkbtn class="btn btn-primary" href="{{ route('post.create') }}">
+                    {{ __('Post') }}
+                </x-nav.linkbtn>
             </x-nav.item>
             <x-nav.item>
-                <x-nav.link href="/register">
-                    {{ __('Register') }}
+                <x-nav.link>
+                    {{ __('Username') }}
                 </x-nav.link>
             </x-nav.item>
         </x-nav.bar>
     </x-nav>
 </header>
+
 

@@ -20,7 +20,7 @@
 @yield('header')
 
 @yield('menu')
-<main>
+<main class="main">
     @yield('content')
 </main>
 
