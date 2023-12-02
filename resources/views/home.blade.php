@@ -9,6 +9,7 @@
             <thead>
             <tr>
                 <th scope="col">#</th>
+                <th scope="col">Country</th>
                 <th scope="col">Title</th>
                 <th scope="col">Preview</th>
                 <th scope="col">Link</th>
@@ -18,6 +19,7 @@
             @foreach($notes as $note)
                 <tr>
                     <th scope="row">{{ $note->id }}</th>
+                    <td>{{ $note->country->name }}</td>
                     <td>{{ $note->title }}</td>
                     <td>{{ $note->preview }}</td>
                     <td><a href="{{ route('notes.slug', ['slug' => $note->slug]) }}">Read more</a></td>

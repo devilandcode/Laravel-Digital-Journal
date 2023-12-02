@@ -28,7 +28,7 @@
         <h1 class="display-4">Digital Journal</h1>
         <p class="lead">Leave travel notes from the most unusual places on the planet that will help new tourists</p>
         <hr class="my-4">
-        <a class="btn btn-primary btn-lg" href="/post/create" role="button">Add Note</a>
+        <a class="btn btn-primary btn-lg" href="{{ route('note.create') }}" role="button">Add Note</a>
     </div>
 </div>
 <main class="main">

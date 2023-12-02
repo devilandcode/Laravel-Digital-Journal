@@ -15,7 +15,7 @@ class NotesTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $countries = Country::all();
+        $countries = Country::all()->random(10);
         foreach ($countries as $country) {
             Note::factory(2)->create([
                 'country_id' => $country->id
