@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Services\Countries\Repositories\CountryRepositoryInterface;
+use App\Services\Countries\Repositories\EloquentCountryRepository;
 use App\Services\Notes\Repositories\EloquentNoteRepository;
 use App\Services\Notes\Repositories\NoteRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
@@ -17,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
         $this->app->bind(NoteRepositoryInterface::class, EloquentNoteRepository::class);
+        $this->app->bind(CountryRepositoryInterface::class, EloquentCountryRepository::class);
     }
 
     /**

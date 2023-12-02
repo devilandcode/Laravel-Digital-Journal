@@ -6,16 +6,17 @@ use App\Services\Notes\Repositories\NoteRepositoryInterface;
 class NotesService
 {
     public function __construct(
-        private NoteRepositoryInterface $repository,
+        private NoteRepositoryInterface $noteRepository,
     )
     {
     }
 
     public function findBySlug(string $slug)
     {
-        return $this->repository->find([
+        return $this->noteRepository->find([
             'key' => 'slug',
             'value' => $slug
         ]);
     }
+
 }

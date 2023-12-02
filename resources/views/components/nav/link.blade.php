@@ -1,6 +1,5 @@
 @props([
     'active' => false,
-    'href' => '#',
     ])
 
 <a {{ $attributes->class([
@@ -8,7 +7,7 @@
     ($active ? 'active' : '')
 ])->merge([
     'aria-current' => 'page',
-    'href' => "{$href}"
+    'href' => '#'
 ]) }}>
 
     {{ $slot }}

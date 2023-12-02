@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/notes/{slug}', [NotesController::class, 'show'])->name('notes.slug');
+Route::get('/note/create', [NotesController::class, 'create'])->name('note.create');
 
 Route::get('/login', function () {
     return view('auth.login');
@@ -26,9 +27,6 @@ Route::get('/register', function () {
     return view('auth.register');
 });
 
-Route::get('/post/create', function () {
-    return view('posts.create');
-})->name('post.create');
 
 Route::get('/profile', function () {
     return view('profile.index');
